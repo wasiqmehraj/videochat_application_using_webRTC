@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <h1 style="font-size:40px;">Bob Side</h1>
+    
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WebRTC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='mainb.css'>
+</head>
+<body>
+
+    <div id="videos">
+        <video class="video-player" id="local-video" autoplay playsinline></video>
+        <video class="video-player" id="remote-video" autoplay playsinline></video>
+        <label> Transmitting Feed</label>
+        <label> Recieving Feed</label>
+    </div>
+    <div class="vertical-center">
+        <button id="learn-state">Learn Recent connection state</button>
+    
+    </div>
+<!-- 
+    <label>SDP Offer obtained from Alice</label>
+    <br>
+    <textarea id="alice-offer"></textarea> -->
+    <br>
+    <br>
+    <!-- <label>SDP Answer</label>
+    <textarea id="bob-answer"></textarea> -->
+    
+    <div class="vertical-center">
+        <button id="generate-answer">Generate Answer</button>
+        <button id="send-answer">Send Answer</button>
+    </div>
+    <br>
+    <br>
+    <textarea id="log-area"></textarea>
+
+    
+    
+</body>
+<script src='mainb.js'></script>
+</html>
