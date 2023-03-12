@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <h1 style="font-size:40px;">Alice Side (Initiator)</h1>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WebRTC ini</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='maina.css'>
+    
+</head>
+<body>
+
+    <div id="videos">
+        <video class="video-player" id="mesa" autoplay playsinline ></video>
+        <video class="video-player" id="yousa" autoplay playsinline></video>
+        <label> Transmitting Feed</label>
+        <label> Recieving Feed</label>
+    </div>
+    <br>
+    <br> 
+    <div class="vertical-center">
+        <button id="generate-offer">Generate Alice's SDP Offer</button>
+    </div>
+    <br>
+    <br> 
+    
+    <label> SDP Offer you created (send it manually to Bob side) </label>
+    <textarea id="alice-offer"></textarea>
+    <br>
+    <br>
+    <br>
+    <label>SDP Answer extracted from Bob</label>
+    <textarea id="bob-answer"></textarea>
+    <br>
+    <br>
+    <div class="vertical-center">
+        <button id="input-answer">Input Bob's Answer </button>
+    </div>
+    
+</body>
+<script src='maina.js'></script>
+</html>
